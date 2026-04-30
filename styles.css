@@ -150,7 +150,7 @@ img {
     inset: 0;
     z-index: -3;
     background-image: url("CV photo.jpg");
-    background-position: 54% 56%;
+    background-position: 62% 46%;
     background-size: cover;
     filter: saturate(0.96);
 }
@@ -649,7 +649,7 @@ h3 {
     }
 
     .hero__media {
-        background-position: 52% 56%;
+        background-position: 58% 44%;
     }
 
     .hero__overlay {
