@@ -3,197 +3,273 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Maximus Johnston Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
-        
+        <meta name="description" content="Portfolio of Maximus Johnston, a data scientist and MSc Data Science student working across machine learning, analytics, and software engineering.">
+        <title>Maximus Johnston | Data Scientist</title>
         <link rel="stylesheet" href="styles.css">
-
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="pi.jpg" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+        <header class="site-header" data-header>
+            <a class="brand" href="#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
             </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Experience</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Maximus Johnston</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Computer Science Student</p>
-            <img src="CV photo.jpg" alt="CV photo" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services" >
-            <h2 class="section__title section__title--services">My Work Experience</h2>
-			
-             <div class="services"  > 
-			 
-			
 
-                <div class="service">
-                    <h3>Data analytics research intern (July 2020- August 2020)</h3>
-                    <p> <ul>  
-                        <li>Worked as part of a research team in collaboration with Newcastle University and The National Innervation Centre for Data to produce a model of charger placement for Engie's electric van fleet</li>
-                        <li>Used Python and data science libraries including Pandas, Folium, Matplotlib and others to produce graphical representations of data collected from vans</li>
-						<li>Used data science techniques to gain insight into data collected by the vans to help define the input variables for the mode</li>
-						<li>Produced a report and presentation of findings to communicate results and methods with Engie and other stakeholders</li>
-                        </ul>  
-                        </p>
-                </div> <!-- / service -->
-
-
-                <div class="service">
-                    <h3>Undergraduate Trainee Software Engineer (September 2020- May 2021 )</h3>
-                    <p> <ul>  
-                        <li>Working within an Agile Development team, working on all stages of product development. Using predominantly C# and XAML and MVVM/MVC design principles, WPF and Visual Studio</li>
-                        <li>Tested, debugged and fixed areas on a large-scale application that has been in development for several years and is used in factory’s all over the world</li>
-						<li>Added new features that customers had requested to improve the user experience and add new functionally to the application</li>
-						<li>Helped create and implement a new form of testing using win app driver to create automated UI tests which save the development team hours of testing and sped up the debugging process</li>
-						</ul>  
-                        </p>
-                </div> <!-- / service -->
-				
-				<div class="service">
-                    <h3>Data Science Intern (May 2021- July 2021</h3>
-                    <p> <ul>
-                        <li>Used Python, SQL and Data science techniques to gain insight into data from a global British fashion brand in order to help them make informed business decisions</li>
-                        <li>Performed market basket analysis on the data and plotted using a networkx diagram to demonstrate the associations between the clients products to improve their retail performance</li>
-                        <li>Used machine learning and feature engineering to predict the next purchase date of the customers</li>
-                    </ul>    
+        <main>
+            <section class="hero" id="home" aria-labelledby="hero-title">
+                <div class="hero__media" aria-hidden="true"></div>
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <p class="eyebrow">Data scientist · software engineer · MSc Data Science student</p>
+                    <h1 id="hero-title">I turn complex data into useful products, forecasts, and decisions.</h1>
+                    <p class="hero__summary">
+                        I am Maximus Johnston, a data scientist with delivery experience across government, retail, and technology.
+                        My work spans predictive modelling, operational analytics, stakeholder-facing visualisation, and production-minded software.
                     </p>
+                    <div class="hero__actions" aria-label="Primary actions">
+                        <a class="button button--primary" href="#work">View selected work</a>
+                        <a class="button button--secondary" href="Maximus-Johnston-CV-2026.pdf">Download CV</a>
+                    </div>
+                </div>
+            </section>
 
-				
+            <section class="proof-strip" aria-label="Career highlights">
+                <div>
+                    <strong>90%+</strong>
+                    <span>forecast accuracy for health service uptake models</span>
+                </div>
+                <div>
+                    <strong>3M+</strong>
+                    <span>retail transactions analysed for recommendation insight</span>
+                </div>
+                <div>
+                    <strong>150+</strong>
+                    <span>factories supported by PCB registration software</span>
+                </div>
+                <div>
+                    <strong>2025</strong>
+                    <span>MSc Data Science at the University of Amsterdam</span>
+                </div>
+            </section>
 
-                </div> <!-- / service -->
-				
-			
+            <section class="section section--intro" aria-labelledby="profile-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Profile</p>
+                    <h2 id="profile-title">Applied data science with a software engineer's delivery habits.</h2>
+                </div>
+                <div class="profile-copy">
+                    <p>
+                        I like work where the model, the data pipeline, and the human decision all matter. At DWP I used SQL, Python,
+                        PySpark, Databricks, Power BI, and Looker to improve audit processes, forecast demand, and communicate insights
+                        clearly enough to support national operational decisions.
+                    </p>
+                    <p>
+                        Before that I built customer-facing features in C# and WPF, delivered automated testing improvements, and worked on
+                        analytics projects involving market basket analysis, customer behaviour prediction, EV charger placement, and federated learning.
+                    </p>
+                </div>
+            </section>
 
-            </div> <!-- / services -->
-          
-            <a href="#work" class="btn">My Work</a>
-        </section>
-        
-        
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Computer Science Student at Newcastle University</p>
-           
-           <div class="about-me__body">
-               <p>
-				I am a third-year computer science student at Newcastle University. 
-				I have just completed a placement with <a href=https://www.xactpcb.com/en>XACT PCB </a> in 
-				Newcastle where I met some great people and 
-				learnt many new skills that will help me in the rest of my degree and beyond. 
-				 </p> 
-				 <p>
-				   This year I will be taking modules in ‘Data Visualization and Visual Analytics’, ‘Predictive Analytics, Computer Vision & Machine Learning’,
-				   ‘Cryptography’ and ‘System and Network Security’. I have a keen interest in Data science and analytics, and I am hoping to write a dissertation
-				   involving areas of these topics. This summer I had the good fortune of doing an internship with <a href=https://www.dataclarity.uk.com/>Data Clarity </a>  where I was able to use Python, SQL and 
-				   Data science techniques 
-				   to gain insight into data from a global British fashion brand in order to help them make informed business decisions. I learnt a great deal while working there and I am grateful for the experience in an area I am hoping to pursue. 
-				   
-				 </p> 
-				 <p>  
-				   Over the next year I will be 
-				   contemplating undertaking further education by completing a master’s in data science or whether to start my career by finding a graduate job 
-				   that suits my interests. If you would like to contact me, my email, CV and LinkedIn are at the bottom of the page.     
-               </p>
+            <section class="section section--dark" id="work" aria-labelledby="work-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="work-title">Projects that connect analysis to action.</h2>
+                </div>
 
-           </div>
-           
-           <img src="wall.jpg" alt="Picture of me" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Education And Work</h2>
-            <p class="section__subtitle section__subtitle--work"></p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-              
-                    
-                <a href="https://www.ncl.ac.uk/" class="portfolio__item">
-                    <img src="ncl.png" alt="" class="portfolio__img">
-                </a>
+                <div class="case-grid">
+                    <article class="case-card case-card--feature">
+                        <div class="case-card__meta">
+                            <span>DWP</span>
+                            <span>SQL · Python · Databricks</span>
+                        </div>
+                        <h3>Audit and operational efficiency</h3>
+                        <p>
+                            Scoped a high-value audit improvement project for health assessments, identifying a reusable BAU process
+                            with potential six-figure savings and securing senior approval for national process changes.
+                        </p>
+                    </article>
 
-		<!-- 	   
-                <a href="https://www.st-maryshigh.derbyshire.sch.uk/sixth-form/" class="portfolio__item">
-                    <img src="Stmary.jpg" alt="" class="portfolio__img">
-                </a>
-                  -->
+                    <article class="case-card">
+                        <div class="case-card__meta">
+                            <span>DWP</span>
+                            <span>PySpark · scikit-learn · Pandas</span>
+                        </div>
+                        <h3>Forecasting health service uptake</h3>
+                        <p>
+                            Built forecasting models above 90% accuracy to inform workforce planning for thousands of staff and
+                            support multi-million-pound resource allocation.
+                        </p>
+                    </article>
 
+                    <article class="case-card">
+                        <div class="case-card__meta">
+                            <span>Data Clarity</span>
+                            <span>Python · SQL · NetworkX</span>
+                        </div>
+                        <h3>Retail market basket analysis</h3>
+                        <p>
+                            Analysed more than 3 million transactions for a global British fashion brand, revealing product associations
+                            that improved recommendations and targeted marketing strategy.
+                        </p>
+                    </article>
 
-			<a href="Curriculum Vitae - Maximus Johnston 2021 New.pdf" class="portfolio__item">
-			   <img src="cv.png" alt="My Cv" class="portfolio__img">
-                </a>
+                    <article class="case-card">
+                        <div class="case-card__meta">
+                            <span>Newcastle University</span>
+                            <span>TensorFlow · Federated learning</span>
+                        </div>
+                        <h3>First-class dissertation</h3>
+                        <p>
+                            Researched the application of federated learning models, building TensorFlow-based experiments for privacy-aware
+                            machine learning as part of a first-class Computer Science degree.
+                        </p>
+                    </article>
 
+                    <article class="case-card">
+                        <div class="case-card__meta">
+                            <span>ENGIE</span>
+                            <span>Pandas · Folium · Matplotlib</span>
+                        </div>
+                        <h3>EV charger placement analytics</h3>
+                        <p>
+                            Modelled charging infrastructure needs for an electric van fleet in partnership with Newcastle University
+                            and the National Innovation Centre for Data.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-			
-               <a href="Summer_Placement (3).pdf" class="portfolio__item">
-			   <img src="e-gas-station-2151404_640.png" alt="My Ev Summer placement" class="portfolio__img">
-                </a>
-<!-- 
-			<a href="https://www.dataclarity.uk.com/" class="portfolio__item">
-                    <img src="DataClarity.png" alt="" class="portfolio__img">
-                </a>
-                 
-            <a href="https://www.xactpcb.com/en" class="portfolio__item">
-                    <img src="Xact.jpg" alt="" class="portfolio__img">
-                </a>
-            
-			<a href="https://www.excelredstone.com/" class="portfolio__item">
-                    <img src="ExcelRedstone.png" alt="" class="portfolio__img">
-                </a> -->
-             
-                
-               
-           
-                
-            </div>
-        </section>
-        
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="max.johnston54@gmail.com" class="footer__link">max.johnston54@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/maximus-johnston-8742a4191/?originalSubdomain=uk">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/MaximusJ08">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-            </ul>
+            <section class="section" id="experience" aria-labelledby="experience-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2 id="experience-title">A practical path through data, software, and decisions.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline__item">
+                        <time>Apr 2023 - Aug 2025</time>
+                        <div>
+                            <h3>Data Scientist · Department for Work and Pensions</h3>
+                            <p>
+                                Delivered analytics and ML projects across audit, operations, and policy teams. Built forecasting,
+                                clustering, text analysis, and visualisation products that helped teams move from analysis to action.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <time>May 2021 - Jul 2021</time>
+                        <div>
+                            <h3>Data Science Intern · Data Clarity</h3>
+                            <p>
+                                Used Python, SQL, Pandas, Matplotlib, NetworkX, and XGBoost to generate insight from large-scale retail data,
+                                including product association analysis and next-purchase modelling.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <time>Sep 2020 - May 2021</time>
+                        <div>
+                            <h3>Undergraduate Software Engineer · XACT PCB</h3>
+                            <p>
+                                Shipped C#, XAML, and WPF features for a large PCB registration application, improved UX, built 3D visualisation
+                                tooling, and automated test processes that saved manual QA effort each sprint.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="timeline__item">
+                        <time>2019 - 2020</time>
+                        <div>
+                            <h3>Early internships · Excel Redstone / Google and ENGIE</h3>
+                            <p>
+                                Worked on software architecture in Java and later joined a data research internship focused on EV fleet charging
+                                analysis with Python's data science stack.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section--split" id="skills" aria-labelledby="skills-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Toolkit</p>
+                    <h2 id="skills-title">Tools I use to move from messy data to trustworthy delivery.</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article>
+                        <h3>Data science</h3>
+                        <p>Python, Pandas, scikit-learn, XGBoost, TensorFlow, NLP, clustering, forecasting, feature engineering</p>
+                    </article>
+                    <article>
+                        <h3>Data engineering</h3>
+                        <p>SQL, PySpark, Databricks, Git, large-scale data exploration, reusable analytical processes</p>
+                    </article>
+                    <article>
+                        <h3>Visualisation</h3>
+                        <p>Power BI, Looker, Matplotlib, NetworkX, Folium, accessible insight communication</p>
+                    </article>
+                    <article>
+                        <h3>Software</h3>
+                        <p>C#, WPF, XAML, Java, MVVM/MVC patterns, automated UI testing, Agile product development</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="education" aria-labelledby="education-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Education</p>
+                    <h2 id="education-title">Formal study focused on data science, analytics, and computing.</h2>
+                </div>
+
+                <div class="education-list">
+                    <article>
+                        <time>2025 - present</time>
+                        <h3>University of Amsterdam</h3>
+                        <p>MSc Data Science, advancing statistical modelling, AI, and large-scale data engineering.</p>
+                    </article>
+                    <article>
+                        <time>2023 - 2025</time>
+                        <h3>Northumbria University</h3>
+                        <p>Postgraduate Diploma in Digital and Technology Solutions, Data Analytics pathway.</p>
+                    </article>
+                    <article>
+                        <time>2018 - 2022</time>
+                        <h3>Newcastle University</h3>
+                        <p>First-class BSc Computer Science with industrial placement, including a first-class dissertation on federated learning.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact" id="contact" aria-labelledby="contact-title">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Interested in data science, analytics engineering, or applied ML roles.</h2>
+                    <p>
+                        I am currently building from Amsterdam and always happy to talk about roles, research, or projects where data products
+                        need to be technically solid and useful to real teams.
+                    </p>
+                </div>
+                <div class="contact__actions">
+                    <a class="button button--primary" href="mailto:max.johnston54@gmail.com">Email me</a>
+                    <a class="button button--secondary" href="https://www.linkedin.com/in/maximus-johnston-8742a4191/">LinkedIn</a>
+                    <a class="button button--secondary" href="https://github.com/MaximusJ08">GitHub</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science · analytics · software engineering</span>
         </footer>
-        
-        
+
         <script src="index.js"></script>
-        
     </body>
 </html>
