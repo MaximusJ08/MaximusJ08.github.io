@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UN speech sentiment and Palestine voting prediction project by Maximus Johnston.">
+        <title>UN Speech and Palestine Voting | Maximus Johnston</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <a class="brand" href="../index.html#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#education">Education</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <p class="eyebrow">Political data science</p>
+                <h1>UN speech sentiment and Palestine voting</h1>
+                <p>
+                    A predictive modelling project testing whether UN General Debate speeches, Palestine-related mentions,
+                    sentiment, region, and recognition status can explain or predict votes on Palestine-related resolutions.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="https://github.com/MaximusJ08/fData_science_project">GitHub</a>
+                    <a class="button button--secondary" href="../assets/projects/un-speech-palestine-voting-report.pdf">Open report</a>
+                    <a class="button button--secondary" href="../assets/projects/un-speech-palestine-voting-report.pdf" download="Rhetoric_and_Resolution__Using_UN_Speech_Sentiment_to_Predict_Voting_Behavior_on_Palestine.pdf">Download report</a>
+                    <a class="button button--secondary" href="../index.html#work">Back to projects</a>
+                </div>
+            </section>
+
+            <section class="project-layout">
+                <article class="project-panel">
+                    <h2>What I Built</h2>
+                    <p>
+                        The project joined UN General Debate text with voting records and engineered Palestine-specific speech
+                        features. The workflow used keyword filtering, TF-IDF term selection, VADER sentiment augmentation,
+                        country-level contextual variables, and supervised classifiers including Random Forest, Naive Bayes,
+                        and Logistic Regression.
+                    </p>
+                    <p>
+                        The strongest signal was not sentiment alone. The report concludes that geography, recognition status,
+                        and how often Palestine was mentioned were more informative than sentiment polarity, while class imbalance
+                        made minority-class F1 a more useful target than headline accuracy.
+                    </p>
+                </article>
+
+                <aside class="project-panel project-panel--accent">
+                    <h2>Project Signals</h2>
+                    <ul class="metric-list">
+                        <li>UN General Debate corpus and General Assembly voting records.</li>
+                        <li>Palestine mention detection, TF-IDF vocabulary analysis, and sentiment scoring.</li>
+                        <li>Random Forest model tuned for imbalanced vote outcomes.</li>
+                        <li>Interpretation focused on structural alliances as well as political rhetoric.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="project-document" aria-labelledby="report-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Report</p>
+                    <h2 id="report-title">Rhetoric and resolution.</h2>
+                </div>
+                <iframe class="pdf-frame" src="../assets/projects/un-speech-palestine-voting-report.pdf" title="UN speech and voting report"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science &middot; analytics &middot; software engineering</span>
+        </footer>
+
+        <script src="../index.js"></script>
+    </body>
+</html>

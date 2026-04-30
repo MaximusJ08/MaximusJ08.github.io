@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="BiLSTM applied machine learning poster project by Maximus Johnston.">
+        <title>BiLSTM AML Poster | Maximus Johnston</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <a class="brand" href="../index.html#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#education">Education</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <p class="eyebrow">Applied machine learning</p>
+                <h1>BiLSTM text classification poster</h1>
+                <p>
+                    An applied NLP project for the AML "Read Between the Lines" task, presented as a poster and linked to a
+                    reproducible GitHub workflow.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="https://github.com/MaximusJ08/AML_27">GitHub</a>
+                    <a class="button button--secondary" href="../assets/projects/bilstm-aml-poster.pdf">Open poster</a>
+                    <a class="button button--secondary" href="../assets/projects/bilstm-aml-poster.pdf" download="BiLSTM_AML_Poster (4).pdf">Download poster</a>
+                    <a class="button button--secondary" href="https://www.kaggle.com/competitions/aml-2025-read-between-the-lines/overview">Kaggle task</a>
+                    <a class="button button--secondary" href="../index.html#work">Back to projects</a>
+                </div>
+            </section>
+
+            <section class="project-layout">
+                <article class="project-panel">
+                    <h2>What I Built</h2>
+                    <p>
+                        The poster presents a sequence-modelling approach for a text classification problem, using a BiLSTM model
+                        as the central architecture. It connects the practical competition workflow with modelling decisions such
+                        as token handling, padding, bidirectional sequence learning, and Adam-based optimisation.
+                    </p>
+                    <p>
+                        The project sits in the applied ML space: not just training a model, but communicating the model design,
+                        baseline context, and results in a concise visual format. The poster also links the implementation repository
+                        and the Kaggle task used for the experiment.
+                    </p>
+                </article>
+
+                <aside class="project-panel project-panel--accent">
+                    <h2>Project Signals</h2>
+                    <ul class="metric-list">
+                        <li>BiLSTM-based NLP classifier for a Kaggle text task.</li>
+                        <li>Poster-format communication of model architecture and evaluation.</li>
+                        <li>References transformer and DistilBERT context for comparison.</li>
+                        <li>Reproducible project link included directly in the poster.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="project-document" aria-labelledby="poster-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Poster</p>
+                    <h2 id="poster-title">BiLSTM AML poster.</h2>
+                </div>
+                <iframe class="pdf-frame" src="../assets/projects/bilstm-aml-poster.pdf" title="BiLSTM AML poster"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science &middot; analytics &middot; software engineering</span>
+        </footer>
+
+        <script src="../index.js"></script>
+    </body>
+</html>

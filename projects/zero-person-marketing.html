@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Zero-person marketing company project by Maximus Johnston.">
+        <title>Zero-person Marketing Company | Maximus Johnston</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <a class="brand" href="../index.html#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#education">Education</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <p class="eyebrow">AI product research</p>
+                <h1>Zero-person marketing company</h1>
+                <p>
+                    A research and prototype project exploring whether an AI-driven multi-agent system can generate a usable,
+                    explainable, end-to-end marketing strategy for early-stage B2C startup founders.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="https://github.com/MaximusJ08/d4_zero_person_marketing">GitHub</a>
+                    <a class="button button--secondary" href="../assets/projects/zero-person-marketing-report.pdf">Open report</a>
+                    <a class="button button--secondary" href="../assets/projects/zero-person-marketing-report.pdf" download="DSP_final_report (4).pdf">Download report</a>
+                    <a class="button button--secondary" href="../index.html#work">Back to projects</a>
+                </div>
+            </section>
+
+            <section class="project-layout">
+                <article class="project-panel">
+                    <h2>What I Built</h2>
+                    <p>
+                        The report frames a zero-person marketing company as a multi-stage AI pipeline that takes minimal founder
+                        input and produces a structured marketing strategy. The system is designed around explainable AI, so each
+                        strategy item can be paired with a rationale or source instead of behaving like a black-box content generator.
+                    </p>
+                    <p>
+                        The evaluation focused on usability and trust for non-expert startup users. The report found above-threshold
+                        usability in a small study, while also calling out the practical risks of generative AI strategy systems:
+                        hallucination, bias, privacy concerns, and the need to test whether generated strategies improve real outcomes.
+                    </p>
+                </article>
+
+                <aside class="project-panel project-panel--accent">
+                    <h2>Project Signals</h2>
+                    <ul class="metric-list">
+                        <li>Multi-agent LLM workflow for founder-facing marketing strategy.</li>
+                        <li>Explainable AI layer for transparent recommendations.</li>
+                        <li>Usability and trust evaluation with startup-oriented users.</li>
+                        <li>Compliance and safety considerations built into the product concept.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="project-document" aria-labelledby="report-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Report</p>
+                    <h2 id="report-title">The exploration of a zero-person marketing company.</h2>
+                </div>
+                <iframe class="pdf-frame" src="../assets/projects/zero-person-marketing-report.pdf" title="Zero-person marketing report"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science &middot; analytics &middot; software engineering</span>
+        </footer>
+
+        <script src="../index.js"></script>
+    </body>
+</html>

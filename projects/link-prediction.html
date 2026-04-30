@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Link prediction and ethical implications project by Maximus Johnston.">
+        <title>Link Prediction and Ethics | Maximus Johnston</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <a class="brand" href="../index.html#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#education">Education</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <p class="eyebrow">Graph machine learning</p>
+                <h1>Link prediction and ethical implications</h1>
+                <p>
+                    A supervised graph ML project that predicts potential social network links while evaluating how model
+                    performance interacts with fairness across detected communities.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="https://github.com/MaximusJ08/fData_science_project_two">GitHub</a>
+                    <a class="button button--secondary" href="../assets/projects/link-prediction-ethical-implications.pdf">Open report</a>
+                    <a class="button button--secondary" href="../assets/projects/link-prediction-ethical-implications.pdf" download="Assignment_2__Link_Prediction_and_Ethical_Implications.pdf">Download report</a>
+                    <a class="button button--secondary" href="../index.html#work">Back to projects</a>
+                </div>
+            </section>
+
+            <section class="project-layout">
+                <article class="project-panel">
+                    <h2>What I Built</h2>
+                    <p>
+                        The report describes a link prediction pipeline using structural, local, and community-aware graph features.
+                        Positive examples came from existing edges, while negative examples were sampled from node pairs without
+                        links. A Gradient Boosting classifier was identified as the strongest model, with community similarity
+                        emerging as an influential feature.
+                    </p>
+                    <p>
+                        The second half of the project treats fairness as a first-class modelling concern. The analysis shows how
+                        graph structure can reinforce existing community advantages, then applies Equalized Odds post-processing
+                        to reduce unequal treatment across communities while acknowledging the resulting accuracy tradeoff.
+                    </p>
+                </article>
+
+                <aside class="project-panel project-panel--accent">
+                    <h2>Project Signals</h2>
+                    <ul class="metric-list">
+                        <li>Supervised link prediction over a social network graph.</li>
+                        <li>Structural, local-neighbourhood, and community-aware feature engineering.</li>
+                        <li>Gradient Boosting selected as the best-performing classifier.</li>
+                        <li>Fairness evaluation using community-level TPR/FPR and Equalized Odds.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="project-document" aria-labelledby="report-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Report</p>
+                    <h2 id="report-title">Link prediction and ethical implications.</h2>
+                </div>
+                <iframe class="pdf-frame" src="../assets/projects/link-prediction-ethical-implications.pdf" title="Link prediction report"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science &middot; analytics &middot; software engineering</span>
+        </footer>
+
+        <script src="../index.js"></script>
+    </body>
+</html>
