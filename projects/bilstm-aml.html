@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="BiLSTM applied machine learning poster project by Maximus Johnston.">
-        <title>BiLSTM AML Poster | Maximus Johnston</title>
+        <meta name="description" content="BiLSTM multiple-choice NLP classifier project by Maximus Johnston.">
+        <title>BiLSTM AML Classifier | Maximus Johnston</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
@@ -26,10 +26,10 @@
         <main>
             <section class="project-hero">
                 <p class="eyebrow">Applied machine learning</p>
-                <h1>BiLSTM text classification poster</h1>
+                <h1>BiLSTM multiple-choice NLP classifier</h1>
                 <p>
-                    An applied NLP project for the AML "Read Between the Lines" task, presented as a poster and linked to a
-                    reproducible GitHub workflow.
+                    An applied NLP project for the AML "Read Between the Lines" Kaggle task, building a custom PyTorch BiLSTM
+                    answer selector and comparing it with a fine-tuned DistilBERT multiple-choice baseline.
                 </p>
                 <div class="hero__actions">
                     <a class="button button--primary" href="https://github.com/MaximusJ08/AML_27">GitHub</a>
@@ -44,24 +44,25 @@
                 <article class="project-panel">
                     <h2>What I Built</h2>
                     <p>
-                        The poster presents a sequence-modelling approach for a text classification problem, using a BiLSTM model
-                        as the central architecture. It connects the practical competition workflow with modelling decisions such
-                        as token handling, padding, bidirectional sequence learning, and Adam-based optimisation.
+                        I implemented a multiple-choice text classifier that scores four candidate answers for each context-question
+                        pair. The custom pipeline builds a vocabulary from the training data, tokenizes context/question/answer
+                        combinations, pads sequences, tracks true sequence lengths, and trains a bidirectional LSTM with embeddings,
+                        dropout, packed padded sequences, cross-entropy loss, and best-model checkpointing.
                     </p>
                     <p>
-                        The project sits in the applied ML space: not just training a model, but communicating the model design,
-                        baseline context, and results in a concise visual format. The poster also links the implementation repository
-                        and the Kaggle task used for the experiment.
+                        Alongside the custom model, I adapted Hugging Face's multiple-choice framework to fine-tune DistilBERT as a
+                        transformer baseline. The notebooks cover train/validation splitting, metric tracking, hyperparameter tuning,
+                        inference over Kaggle test data, and submission-file generation for both the baseline and BiLSTM approaches.
                     </p>
                 </article>
 
                 <aside class="project-panel project-panel--accent">
                     <h2>Project Signals</h2>
                     <ul class="metric-list">
-                        <li>BiLSTM-based NLP classifier for a Kaggle text task.</li>
-                        <li>Poster-format communication of model architecture and evaluation.</li>
-                        <li>References transformer and DistilBERT context for comparison.</li>
-                        <li>Reproducible project link included directly in the poster.</li>
+                        <li>Custom PyTorch BiLSTM multiple-choice answer scorer.</li>
+                        <li>DistilBERT baseline using Hugging Face Trainer and tokenizer tooling.</li>
+                        <li>Vocabulary building, sequence padding, length masking, and checkpointed training.</li>
+                        <li>Kaggle inference workflow that exports prediction CSVs.</li>
                     </ul>
                 </aside>
             </section>

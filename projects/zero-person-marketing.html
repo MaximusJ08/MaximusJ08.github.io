@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Zero-person marketing company project by Maximus Johnston.">
+        <meta name="description" content="AI-powered marketing strategy generator project by Maximus Johnston.">
         <title>Zero-person Marketing Company | Maximus Johnston</title>
         <link rel="stylesheet" href="../styles.css">
     </head>
@@ -25,11 +25,11 @@
 
         <main>
             <section class="project-hero">
-                <p class="eyebrow">AI product research</p>
+                <p class="eyebrow">AI marketing product</p>
                 <h1>Zero-person marketing company</h1>
                 <p>
-                    A research and prototype project exploring whether an AI-driven multi-agent system can generate a usable,
-                    explainable, end-to-end marketing strategy for early-stage B2C startup founders.
+                    A Shiny web app that turns a lean startup brief into a structured marketing strategy dashboard, using a
+                    staged OpenAI pipeline for audience, market, messaging, channel, campaign, roadmap, compliance, and brand assets.
                 </p>
                 <div class="hero__actions">
                     <a class="button button--primary" href="https://github.com/MaximusJ08/d4_zero_person_marketing">GitHub</a>
@@ -43,24 +43,26 @@
                 <article class="project-panel">
                     <h2>What I Built</h2>
                     <p>
-                        The report frames a zero-person marketing company as a multi-stage AI pipeline that takes minimal founder
-                        input and produces a structured marketing strategy. The system is designed around explainable AI, so each
-                        strategy item can be paired with a rationale or source instead of behaving like a black-box content generator.
+                        I built the product as a Python Shiny application with a multi-step intake flow, server-side validation,
+                        generated strategy dashboard, and budget-aware OpenAI integration. A founder supplies core business details,
+                        constraints, tone preferences, target regions, competitors, and sensitive topics; the app normalizes that
+                        brief and passes it through a deterministic strategy-generation pipeline.
                     </p>
                     <p>
-                        The evaluation focused on usability and trust for non-expert startup users. The report found above-threshold
-                        usability in a small study, while also calling out the practical risks of generative AI strategy systems:
-                        hallucination, bias, privacy concerns, and the need to test whether generated strategies improve real outcomes.
+                        The pipeline generates personas, market intelligence, competitor positioning, UVP and messaging, channel
+                        allocation, campaign ideas, a phased roadmap, compliance review, and a logo prompt/output. It also includes
+                        feedback-driven regeneration: users can critique the strategy, the controller identifies the earliest stage
+                        to rerun, applies concrete constraints, and rechecks compliance before rebuilding the dashboard.
                     </p>
                 </article>
 
                 <aside class="project-panel project-panel--accent">
                     <h2>Project Signals</h2>
                     <ul class="metric-list">
-                        <li>Multi-agent LLM workflow for founder-facing marketing strategy.</li>
-                        <li>Explainable AI layer for transparent recommendations.</li>
-                        <li>Usability and trust evaluation with startup-oriented users.</li>
-                        <li>Compliance and safety considerations built into the product concept.</li>
+                        <li>Python Shiny app with intake, loading, dashboard, and feedback pages.</li>
+                        <li>Deterministic 10-stage OpenAI pipeline for strategy generation.</li>
+                        <li>Budget tracking, validation, error handling, and compliance fix-loops.</li>
+                        <li>Regeneration controller that turns user feedback into targeted reruns.</li>
                     </ul>
                 </aside>
             </section>
