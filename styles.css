@@ -917,6 +917,11 @@ h3 {
         column-gap: 10px;
     }
 
+    .adventure-card::after,
+    .adventure-card figcaption {
+        display: none;
+    }
+
     .button {
         width: 100%;
     }
