@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MSc dissertation on estimating hidden fashion retail demand under stockout censoring, with simulation-based robustness analysis and a neurosymbolic extension.">
+        <title>Fashion Retail Demand Estimation | Maximus Johnston</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <header class="site-header" data-header>
+            <a class="brand" href="../index.html#home" aria-label="Maximus Johnston home">MJ</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="../index.html#work">Work</a>
+                <a href="../index.html#adventures">Adventures</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#education">Education</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="project-hero">
+                <p class="eyebrow">MSc dissertation &middot; Graduated cum laude</p>
+                <h1>Estimating hidden demand when fashion items sell out.</h1>
+                <p>
+                    Evaluated an EM-MNL demand estimator under stockout censoring in fashion retail, using simulations and multi-retailer sales data.
+                    The dissertation also introduces a neurosymbolic extension that uses style-based substitution rules as soft constraints.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="../assets/projects/MSc_Information_Studies_DS_IS_Master_MJ_Final.pdf">Read the dissertation</a>
+                    <a class="button button--secondary" href="../assets/projects/MSc_Information_Studies_DS_IS_Master_MJ_Final.pdf" download>Download PDF</a>
+                    <a class="button button--secondary" href="https://gitlab.com/wair-thesis-max/thesis_project">GitLab repository</a>
+                    <a class="button button--secondary" href="../index.html#work">Back to projects</a>
+                </div>
+            </section>
+
+            <section class="project-layout">
+                <article class="project-panel">
+                    <h2>The problem</h2>
+                    <p>
+                        When a product is out of stock, recorded sales understate its true demand. Some customers switch to another item,
+                        while others leave without buying, so sales data can make both the unavailable product and its substitutes look
+                        different from what customers actually wanted.
+                    </p>
+                    <p>
+                        I tested how reliably the EM-MNL estimator can recover that hidden demand. The study first established a
+                        simulation-based baseline, then examined when its assumptions break down and compared the results with sales data
+                        from multiple fashion retailers.
+                    </p>
+                </article>
+
+                <aside class="project-panel project-panel--accent">
+                    <h2>What the study found</h2>
+                    <ul class="metric-list">
+                        <li>Under ideal simulated conditions, EM-MNL recovered demand more accurately than naive baselines, Poisson regression, and neural networks.</li>
+                        <li>Robustness thresholds for substitution correlation and arrival over-dispersion were checked across 12 retail stores.</li>
+                        <li>Style-based soft constraints improved recovery when data were sparse if the rules were correct; incorrect rules could reduce performance.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="project-layout project-layout--single">
+                <article class="project-panel">
+                    <h2>Neurosymbolic extension</h2>
+                    <p>
+                        The extension adds product-style knowledge to the estimator as a soft constraint, guiding it toward plausible
+                        substitutions without making those rules absolute. That makes the rule's quality visible: useful style knowledge
+                        can help with sparse sales data, while a poor rule can be harmful. Disabling the rule returns the estimator to its
+                        original form.
+                    </p>
+                </article>
+            </section>
+
+            <section class="project-document" aria-labelledby="dissertation-title">
+                <div class="section__heading">
+                    <p class="eyebrow">Full dissertation</p>
+                    <h2 id="dissertation-title">Evaluating and extending EM-MNL demand estimation.</h2>
+                </div>
+                <iframe class="pdf-frame" src="../assets/projects/MSc_Information_Studies_DS_IS_Master_MJ_Final.pdf" title="MSc dissertation on demand estimation under stockout censoring in fashion retail"></iframe>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>Maximus Johnston</span>
+            <span>Data science &middot; analytics &middot; software engineering</span>
+        </footer>
+
+        <script src="../index.js"></script>
+    </body>
+</html>
